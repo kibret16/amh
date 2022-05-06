@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Fidel</title>
+<link rel='manifest' href='manifest.json'>
+<link rel="stylesheet" href="style.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
+<link rel="icon" type="image/png" sizes="any" href="images/icon.png">
+
+</head>
+
+<body>
+
+<div class="container-box">
+  <span class="btn float-right" onclick="copyText('writing-area-one')">Copy</span>
+  <h1 class="mb-1">Fidel</h1>
+
+  <div class="row" id="text">
+    <textarea id="writing-area-one" class="relaxed full-width input-field bordered writing-area "  onclick='javascript:hide_help_table("fidel_table")' onkeyup='javascript:if(event.crtlKey) var ctrl=1; amh("writing-area-one",event, ctrl)'></textarea>
+  </div>
+
+</div>
+
+
+<script src="script.js"></script>
+<script src="amh.js"></script>
+
+</body>
+
+</html>
